@@ -33,7 +33,7 @@
 
     <nav class="menu">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="views/two.html">Page two</a></li>
             <li><a href="views/three.html">Page three</a></li>
         </ul>
@@ -44,6 +44,22 @@
     <p class="css-question">
         To add external CSS in HTML we use the <code>link</code> tag in the header of our HTML file. <br> 
         <code>< link rel="stylesheet" href="mystyle.css" ></code> -We use the rel attribute to specify the relationship between the linked document and HTML file. We use the src attribute to write the URL of the CSS file.
+    </p>
+
+    <h2 class="js-question">
+        How to Use JavaScript in a Webpage
+    </h2>
+    <p class="js-question">
+        To link an external Javascript file we'll have to be writing scripts in their own .js file. <br>
+        The source of the file goes in the <code> script </code> tag, that you write in your HTML file. <br>
+        For example you write this code in your myJavaScript.js file: <br>
+        <code>window.addEventListener("load", () => {
+            console.log("This function is executed once the page is fully loaded");
+          });</code> <br>
+        On your HTML file in the <code>head</code> tag, you open a <code>script</code> tag and put the URL of the myJavascript.js file, <br>
+        <code>src = "path/to/myJavascript.js"</code> <br>
+        Another opportunity to write Javascript code is within your HTML file, instead of writing the <code>src</code> attribute, you write the code of JS inside the <code>script</code> tag. <br>
+
     </p>
 
 </body>
